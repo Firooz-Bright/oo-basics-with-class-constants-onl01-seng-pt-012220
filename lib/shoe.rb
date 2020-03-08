@@ -1,7 +1,7 @@
 class Shoe
   attr_accessor :color, :size, :material, :condition،:
 
- BRANDS= Array.new()
+ BRANDS= []
   def initialize(brand)
     @brand = brand
   end
@@ -12,6 +12,6 @@ class Shoe
   end
  def brand=(brand)
    @brand=brand 
-   BRANDS.push (brand)
+   BRANDS << (brand)
 end
 end 
